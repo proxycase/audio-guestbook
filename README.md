@@ -10,7 +10,7 @@ In some cases, the MTP capability (allowing file transfer without removing the S
 ### Background
 The "modifications by h4yn0nnym0u5e, October 27th 2022" work significantly better if the audio library is "tweaked" to use larger data blocks and thus less-frequent audio updates. This allows more time for an SD card write before an interrupt is missed and audio data are lost.
 ### Installation method
-Unfortunately, "installation" is a bit messy, but you only have to do it once (unless you update your Arduino IDE or Teensyduino). The guestbook sketch folder contains two Arduino architecture configuration files, `boards.local.txt` and`platform.txt`. These must be used to update your existing configuration files; in Windows systems these will typically be in `C:\Program Files (x86)\Arduino\hardware\teensy\avr` [todo: where are they on Linux and Mac?].
+Unfortunately, "installation" is a bit messy, but you only have to do it once (unless you update your Arduino IDE or Teensyduino). The guestbook sketch folder contains two Arduino architecture configuration files, `boards.local.txt` and`platform.txt`. These must be used to update your existing configuration files; in Windows systems these will typically be in `C:\Program Files (x86)\Arduino\hardware\teensy\avr` and for Mac in `/Libraries/Arduino15/packages/teensy/hardware/avr/1.59.0/boards.txt` - note: your version number may be different.
 
 Before you do anything else, **_back up the existing configuration files_**! Then, make sure all running copies of the Arduino IDE are closed.
 
